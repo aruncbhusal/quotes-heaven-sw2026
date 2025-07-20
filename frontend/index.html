@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Quote Board</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Quote Heaven</h1>
+
+            <div class="form-card">
+                <textarea
+                    id="quoteInput"
+                    placeholder="Enter your quote..."
+                    rows="4"
+                ></textarea>
+                <input type="text" id="authorInput" placeholder="Author" />
+                <button id="submitQuote" class="primary">Add Quote</button>
+            </div>
+
+            <button id="loadQuotes" class="secondary">Load All Quotes</button>
+
+            <div id="quotesContainer" class="quotes-container">
+                <!-- Quotes will show up here -->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
